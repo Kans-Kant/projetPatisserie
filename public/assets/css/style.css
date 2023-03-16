@@ -1,0 +1,669 @@
+:root {
+    --primary: #8d4e00;
+    --secondary: #B48646;
+    --light: #FFE1B7;
+    --dark: #503713;
+}
+
+.font-secondary {
+    font-family: 'Pacifico', cursive;
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+.text{
+    color:#E88f2A;
+}
+.text-coord{
+    color:#E88f2A;
+}
+
+a:hover{
+    color: #E88f2A; 
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+.category{
+    background-color: #E88f2A !important;
+    /* background-color: #a57d5c !important; */
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: #f3f3f3;
+    border-bottom-right-radius: 7px;
+    border-top-left-radius: 7px;
+    font-size: 1.2rem;
+  /* margin: 1rem 0; */
+    cursor: pointer;
+    border: solid 2.5px #a57d5c;
+    transition: all 0.3s;
+}
+
+.category:hover {
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    background-color: #f3f3f3;
+    color: #a57d5c;
+    border: solid 2.5px #a57d5c;
+}
+.category1{
+ 
+    background-color: #212529 !important;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: #f3f3f3;
+    border-bottom-right-radius: 7px;
+    border-top-left-radius: 7px;
+    font-size: 1.2rem;
+  /* margin: 1rem 0; */
+    cursor: pointer;
+    border: solid 2.5px #a57d5c;
+    transition: all 0.3s;
+}
+
+.category1:hover {
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    background-color:#E88f2A !important;
+    /* background-color: #f3f3f3; */
+    color: #a57d5c ;
+    border: solid 2.5px #a57d5c;
+}
+
+.btn {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.border-inner {
+    position: relative;
+}
+
+.border-inner * {
+    position: relative;
+    z-index: 1;
+}
+
+.border-inner::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    background: none;
+    border: 1px solid var(--light);
+    z-index: 0;
+}
+
+.btn-square {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-sm-square {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-lg-square {
+    width: 50px;
+    height: 50px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 99;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: 'Oswald', sans-serif;
+    padding: 30px 15px;
+    font-size: 25px;
+    font-weight:500;
+    text-transform: uppercase;
+    color: var(--light);
+
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-dark .navbar-nav .nav-link {
+    padding: 20px 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--secondary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+/* .hero-header {
+    background: url(../img/hero1.jpg) top right no-repeat;
+    background-size: cover;
+} */
+
+.btn-play {
+    position: relative;
+    display: block;
+    box-sizing: content-box;
+    width: 16px;
+    height: 26px;
+    border-radius: 100%;
+    border: none;
+    outline: none !important;
+    padding: 18px 20px 20px 28px;
+    background: #FFFFFF;
+}
+
+.btn-play:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 100%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.btn-play:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 100%;
+    transition: all 200ms;
+}
+
+.btn-play span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    left: -1px;
+    border-left: 16px solid var(--primary);
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+        opacity: 0;
+    }
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 0.5em;
+  }
+  .bg-img {
+    background: linear-gradient(rgba(43, 40, 37, .5), rgba(43, 40, 37, .5)), url(../img/bg.png) center center no-repeat;
+    background-size: cover;
+} 
+/* #videoModal .modal-dialog {
+    position: relative;
+    max-width: 800px;
+    margin: 60px auto 0 auto;
+} */
+
+/* #videoModal .modal-body {
+    position: relative;
+    padding: 0px;
+} */
+
+/* #videoModal .close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0px;
+    top: -30px;
+    z-index: 999;
+    font-size: 30px;
+    font-weight: normal;
+    color: #FFFFFF;
+    background: #000000;
+    opacity: 1;
+} */
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 10px;
+    left: 50%;
+    bottom: 0;
+    margin-left: -30px;
+    background: var(--primary);
+} 
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 2px;
+    left: 50%;
+    bottom: 4px;
+    margin-left: -90px;
+    background: var(--primary);
+}
+
+.service::after,
+.contact::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: calc(100% - 45px);
+    top: 135px;
+    left: 0;
+    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(../img/service.jpg) center center no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.contact::after {
+    background: linear-gradient(rgba(43, 40, 37, .5), rgba(43, 40, 37, .5)), url(../img/bg.png) center center no-repeat;
+    background-size: cover;
+}
+
+.bg-offer {
+    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(../img/offer.jpg) center center no-repeat;
+    background-size: cover;
+}
+/* style img category */
+ .cake-item img {
+    transition: .5s;
+}
+
+.cake-item:hover img {
+    transform: scale(1.1);
+    filter: blur(5px)
+}
+
+.cake-item .team-overlay {
+    transition: .5s;
+    opacity: 0;
+}
+
+.cake-item:hover .team-overlay {
+    opacity: 1;
+}
+/* ----------------------------end---------------------------------- */
+
+/* .testimonial-carousel .owl-dots {
+    height: 45px;
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}  */
+/* 
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 2px;
+    width: 10px;
+    height: 25px;
+    background: #DDDDDD;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    height: 45px;
+    background: var(--primary);
+}
+
+.testimonial-carousel .owl-item .testimonial-item {
+    opacity: .1;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+    opacity: 1;
+} */
+/* ---------form connection-------- */
+
+.connectForm,
+.inscriptionForm {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url('../img/gateau.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connectForm form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 10vh 1rem 10vh 1rem;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  height: 70vh;
+  width: 300px;
+  background-color: rgba(29, 29, 29, 0.577);
+}
+
+.connectForm form input {
+  background-color: rgba(255, 255, 255, 0.059);
+  border: none;
+  border-bottom: 1px gray solid;
+  color: #f3f3f3;
+  padding: 0.3rem 0.3rem;
+  width: 240px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.connectForm form input::placeholder {
+  color: #f3f3f3;
+}
+
+.connectForm form input:focus {
+  outline: none;
+}
+
+.connectForm button {
+  padding: 0.7rem 1.2rem;
+}
+
+.connectForm a {
+  color: #f3f3f3;
+  font-size: 0.8rem;
+}
+legend {
+  font-family: 'Dancing', Courier, monospace;
+  font-weight: 500;
+  color: #a57d5c;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+.forgotPwd legend {
+  text-align: center;
+}
+button {
+  background-color: #a57d5c;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #f3f3f3;
+  border-bottom-right-radius: 7px;
+  border-top-left-radius: 7px;
+  font-size: 1.2rem;
+  /* margin: 1rem 0; */
+  cursor: pointer;
+  border: solid 2.5px #a57d5c;
+  transition: all 0.3s;
+}
+
+button:hover {
+  border-bottom-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  background-color: #f3f3f3;
+  color: #a57d5c;
+  border: solid 2.5px #a57d5c;
+}
+
+.passwordRequires {
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  position: fixed;
+  display: none;
+  top: 37%;
+  width: 350px;
+}
+
+.passwordRequires div {
+  color: rgb(190, 1, 1);
+}
+
+/* form inscription */
+.inscriptionForm {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1)
+      ),
+      url('../img/fondpat6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inscriptionForm form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10vh 1rem 0 1rem;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 75vh;
+    width: 300px;
+    background-color: rgba(29, 29, 29, 0.577);
+  }
+
+  *,
+  ::before,
+  ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  .errorMessage {
+    color: red;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  
+  .inscriptionForm form input {
+    background-color: rgba(255, 255, 255, 0.059);
+    border: none;
+    border-bottom: 1px gray solid;
+    color: #f3f3f3;
+    padding: 0.3rem 0.3rem;
+    width: 240px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .inscriptionForm form input::placeholder {
+    color: #f3f3f3;
+  }
+  
+  .inscriptionForm form input:focus {
+    outline: none;
+  }
+  
+  .inscriptionForm button {
+    margin: 0;
+    padding: 0.7rem 1.2rem;
+    width: 80%;
+  }
+  
+  .inscriptionForm fieldset {
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    margin: 0;
+    color: #f3f3f3;
+    font-size: 0.7rem;
+  }
+  
+  .inscriptionForm .checkbox {
+    width: 15px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .inscriptionForm label > a {
+    text-decoration: underline;
+  }
+  
+  .inscriptionForm label > a:hover {
+    color: #a57d5c;
+  }
+  
+  legend {
+    font-family: 'Dancing', Courier, monospace;
+    font-weight:200;
+    color: #a57d5c;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .inscriptionForm a {
+    color: #f3f3f3;
+    font-size: 0.8rem;
+  }
+  
+  label {
+    padding-left: 1rem;
+    cursor: pointer;
+  }
+  
+  .inscriptionForm button {
+    cursor: pointer;
+  }
+  
+  .inscriptionForm button:disabled {
+    cursor: auto;
+    background-color: #4f4d4d;
+    color: #333;
+  }
+  
+  .inscriptionForm a,
+  .connectForm a {
+    cursor: pointer;
+  }
+  
+  /*  ################################################################ 
+      ################# Overlay erreur mot de passe ##################
+      ################################################################*/
+  
+  .passwordRequires {
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    position: fixed;
+    display: none;
+    top: 37%;
+    width: 350px;
+  }
+  
+  .passwordRequires div {
+    color: rgb(190, 1, 1);
+  }
+  
+  /* style Button */
+  button {
+    background-color: #a57d5c;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: #f3f3f3;
+    border-bottom-right-radius: 7px;
+    border-top-left-radius: 7px;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    border: solid 2.5px #a57d5c;
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    background-color: #f3f3f3;
+    color: #a57d5c;
+    border: solid 2.5px #a57d5c;
+  }
+  

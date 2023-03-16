@@ -1,0 +1,81 @@
+/*  ################################################################ 
+    #######################     Footer     #########################
+    ################################################################*/
+    footer {
+        background-color: #242424;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #f3f3f3;
+        width: 100%;
+      }
+      
+      footer h2 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-family: 'UnicaOne';
+        margin-top: 1.5rem;
+      }
+      
+      footer a {
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+      }
+      
+      footer a:hover {
+        color: #a57d5c;
+      }
+      
+      footer .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+      }
+      
+      footer .contact a {
+        margin: 0.3rem 0;
+        text-decoration: none;
+        color: #f3f3f3;
+      }
+      
+      footer .contact a:hover {
+        color: #a57d5c;
+      }
+      
+      footer .social img {
+        height: 30px;
+        margin: 0 1rem;
+      }
+      
+      footer .social svg {
+        fill: #fff;
+        height: 30px;
+        margin: 0.3rem 1rem;
+      }
+      
+      footer .social svg:hover {
+        fill: #a57d5c;
+      }
+      
+      footer .legal {
+        margin: 1rem 0 3rem 0;
+        font-size: 0.7rem;
+      }
+      
+      footer .cgu {
+        font-size: 1rem;
+        margin: 1rem 0 0.5rem 0;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      footer .cgu a:nth-child(1) {
+        margin-bottom: 0.5rem;
+      }

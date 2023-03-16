@@ -1,0 +1,140 @@
+/*  ################################################################ 
+    ################### Formulaire de connexion ####################
+    ################################################################*/
+
+    .connectHeader {
+        height: 0;
+      }
+      
+      .connectHeader h1 {
+        margin: 0;
+      }
+      
+      .connectHeader h2 {
+        color: #f3f3f3;
+        font-size: 2.5rem;
+        margin-top: -1rem;
+        text-shadow: 5px 5px 2px #000;
+      }
+      
+      .connectForm,
+      .inscriptionForm {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url('../img/fondpat7.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .connectForm form {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        margin: 10vh 1rem 0 1rem;
+        padding: 1rem 1rem;
+        border-radius: 10px;
+        border: 1px solid black;
+        height: 70vh;
+        width: 300px;
+        background-color: rgba(29, 29, 29, 0.577);
+      }
+      
+      .connectForm form input {
+        background-color: rgba(255, 255, 255, 0.059);
+        border: none;
+        border-bottom: 1px gray solid;
+        color: #f3f3f3;
+        padding: 0.3rem 0.3rem;
+        width: 300px;
+        height: 150px;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+      
+      .connectForm form input::placeholder {
+        color: #f3f3f3;
+      }
+      
+      .connectForm form input:focus {
+        outline: none;
+      }
+      
+      .connectForm button {
+        padding: 0.7rem 1.2rem;
+      }
+      
+      .connectForm a {
+        color: #f3f3f3;
+        font-size: 0.8rem;
+      }
+      legend {
+        font-family: 'Dancing', Courier, monospace;
+        font-weight: 500;
+        color: #a57d5c;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-weight: bold;
+      }
+      .forgotPwd legend {
+        text-align: center;
+      }
+      button {
+        font-family: 'UnicaOne';
+        background-color: #a57d5c;
+        text-transform: uppercase;
+        padding: 0.5rem 1rem;
+        border: none;
+        color: #f3f3f3;
+        border-bottom-right-radius: 7px;
+        border-top-left-radius: 7px;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+        cursor: pointer;
+        border: solid 2.5px #a57d5c;
+        transition: all 0.3s;
+      }
+      
+      button:hover {
+        border-bottom-left-radius: 7px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+        background-color: #f3f3f3;
+        color: #a57d5c;
+        border: solid 2.5px #a57d5c;
+      }
+      
+      .passwordRequires {
+        background-color: #d3d3d3;
+        border-radius: 10px;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        position: fixed;
+        display: none;
+        top: 37%;
+        width: 350px;
+      }
+      
+      .passwordRequires div {
+        color: rgb(190, 1, 1);
+      }
+      h3{
+        color :#a57d5c;
+      }
+      
+     .result{
+        color: #f3f3f3;
+        padding: 0.3rem 0.3rem;
+        text-align: center;
+        font-size: 1.2rem;
+     }
+      

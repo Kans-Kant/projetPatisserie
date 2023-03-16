@@ -1,0 +1,207 @@
+/*  ################################################################ 
+    ################## Formulaire d'inscription ####################
+    ################################################################*/
+
+    .connectHeader {
+        height: 0;
+      }
+      
+      .connectHeader h1 {
+        margin: 0;
+      }
+      
+      .connectHeader h2 {
+        color: #f3f3f3;
+        font-size: 2.5rem;
+        margin-top: -1rem;
+        text-shadow: 5px 5px 2px #000;
+      }
+      
+      .inscriptionForm {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+          ),
+          url('../img/fondpat7.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .inscriptionForm form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 10vh 1rem 0 1rem;
+        padding: 1rem 1rem;
+        border-radius: 10px;
+        border: 1px solid black;
+        height: 75vh;
+        width: 300px;
+        background-color: rgba(29, 29, 29, 0.577);
+      }
+      /* .inscriptionForm form { */
+      /* display: flex; */
+      /* flex-direction: column; */
+      /* justify-content: space-around; */
+      /* align-items: center; */
+      /* flex-wrap: wrap; */
+      /* margin: 10vh 1rem 0 1rem; */
+      /* padding: 1rem 1rem; */
+      /* border-radius: 10px; */
+      /* border: 1px solid black; */
+      /* height: 75vh; */
+      /* width: 300px; */
+      /* background-color: rgba(29, 29, 29, 0.577); */
+      /* } */
+      *,
+      ::before,
+      ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      
+      .errorMessage {
+        color: red;
+        font-size: 0.8rem;
+        text-align: center;
+      }
+      
+      .inscriptionForm form input {
+        background-color: rgba(255, 255, 255, 0.059);
+        border: none;
+        border-bottom: 1px gray solid;
+        color: #f3f3f3;
+        padding: 0.3rem 0.3rem;
+        width: 240px;
+        height: 40px;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+      
+      .inscriptionForm form input::placeholder {
+        color: #f3f3f3;
+      }
+      
+      .inscriptionForm form input:focus {
+        outline: none;
+      }
+      
+      .inscriptionForm button {
+        margin: 0;
+        padding: 0.7rem 1.2rem;
+        width: 80%;
+      }
+      
+      .inscriptionForm fieldset {
+        width: 100%;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+        margin: 0;
+        color: #f3f3f3;
+        font-size: 0.7rem;
+      }
+      
+      .inscriptionForm .checkbox {
+        width: 15px;
+        height: 25px;
+        cursor: pointer;
+      }
+      
+      .inscriptionForm label > a {
+        text-decoration: underline;
+      }
+      
+      .inscriptionForm label > a:hover {
+        color: #a57d5c;
+      }
+      
+      legend {
+        font-family: 'Dancing', Courier, monospace;
+        font-weight: 500;
+        color: #a57d5c;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      
+      .inscriptionForm a {
+        color: #f3f3f3;
+        font-size: 0.8rem;
+      }
+      
+      label {
+        padding-left: 1rem;
+        cursor: pointer;
+      }
+      
+      .inscriptionForm button {
+        cursor: pointer;
+      }
+      
+      .inscriptionForm button:disabled {
+        cursor: auto;
+        background-color: #4f4d4d;
+        color: #333;
+      }
+      
+      .inscriptionForm a,
+      .connectForm a {
+        cursor: pointer;
+      }
+      
+      /*  ################################################################ 
+          ################# Overlay erreur mot de passe ##################
+          ################################################################*/
+      
+      .passwordRequires {
+        background-color: #d3d3d3;
+        border-radius: 10px;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        position: fixed;
+        display: none;
+        top: 37%;
+        width: 350px;
+      }
+      
+      .passwordRequires div {
+        color: rgb(190, 1, 1);
+      }
+      
+      /* style Button */
+      button {
+        font-family: 'UnicaOne';
+        background-color: #a57d5c;
+        text-transform: uppercase;
+        padding: 0.5rem 1rem;
+        border: none;
+        color: #f3f3f3;
+        border-bottom-right-radius: 7px;
+        border-top-left-radius: 7px;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+        cursor: pointer;
+        border: solid 2.5px #a57d5c;
+        transition: all 0.3s;
+      }
+      
+      button:hover {
+        border-bottom-left-radius: 7px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+        background-color: #f3f3f3;
+        color: #a57d5c;
+        border: solid 2.5px #a57d5c;
+      }
